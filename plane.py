@@ -76,8 +76,6 @@ class Plane(Actor):
             img='img/plane3.png',
             scale=2,
             **kwargs)
-        # self._initial_pos = kwargs.get('position', (0, 0))
-        # self._initial_rot = kwargs.get('rotation', 0)
         self._initial_pos = self.position
         self._initial_rot = self.rotation
         self._initial_scale = self.scale

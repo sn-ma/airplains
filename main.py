@@ -130,11 +130,6 @@ class MainLayer(cocos.layer.ColorLayer):
                     actor.update_cshape()
                     self.collman.add(actor)
         for collided in self.collman.iter_all_collisions():
-            # print('Collision:', act1, act2)
-            # if all(isinstance(act, Rocket) for act in collided): # rockets don't damage each other
-            #     continue
-            # act1, act2 = collided
-            # center = (eu.Vector2(*act1.position) + eu.Vector2(*act2.position)) / 2
             for actor in collided:
                 self.collision_action(actor)
 
